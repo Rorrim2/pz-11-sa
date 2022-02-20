@@ -1,0 +1,14 @@
+import pygame
+
+SCREEN_WIDTH, SCREEN_HEIGHT = (800,800)
+PLATFORM_WIDTH, PLATFORM_HEIGHT = (200,200)
+MAX_VELOCITY = 20
+TICKS = 60
+PLAYER_RADIUS_RATIO = 0.8
+RATIO = int(SCREEN_HEIGHT/PLATFORM_HEIGHT)
+NAME = "Agarn't SA"
+
+MAIN_SURFACE = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
+
+def get_all_actions():
+    return ['L', 'R', 'U', 'D', 'LU', 'LD', 'RU', 'RD']
